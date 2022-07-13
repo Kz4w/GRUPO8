@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+header {
+    height: 80px;  /* altura - header*/
+    width: 100%;
+    background-color: orange;
+    box-sizing : border-box;
+}
+
+header h1 {
+    color: rgb(6, 6, 26);
+    font-size: 35px;
+    font-family: fantasy;
+    padding: 20px;
+    margin: 0px;
+    text-align: center;
+}
+
+main {
+    height: calc(100vh - 80px);
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+}
+
+main .canva-box {
+    height: 40vh;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    background-color:rgb(24, 24, 24);
+    text-align: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+main .options {
+    display: flex;
+    justify-content:center;
+    margin: 5vh 1vh;
+}
+
+main div .push {
+    height: 35vh;
+    width: 50vh;
+    text-align: center;
+}
+
+main div .pop {
+    height: 35vh;
+    width: 50vh;
+    text-align: center;
+}
+
+.options h5 {
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(236, 182, 125);
+    margin-top: 12px;
+    margin-bottom: 30px;
+}
+
+.options li {
+    margin: 4px 0px;
+    padding-top: 4px;
+}
+
+
+#tutorial {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #000000;
+    background-color: rgb(237, 248, 255);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #ff9e01; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: #fff4ec;
+}
+
+/* BOTONES */
+.options .push ul li button{
+    border-width: 1px;
+    border-color:rgb(70, 44, 8);
+    box-shadow: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 12px;
+    background-color: rgb(241, 220, 193);
+}
+.options .push ul li button:hover{
+    background-color: rgb(114, 169, 66);
+    color: rgb(0, 0, 0);
+}
+.options .pop ul li button{
+    border-width: 0px;
+    width: 100px;
+    height: 25px;
+    font-size: 12px;
+    border-radius: 10px;
+    background-color: rgb(241, 220, 193);
+}
+.options .pop ul li button:hover{
+    background-color: rgb(162, 62, 62);
+    color: rgb(0, 0, 0);
+}
+/* pantalla pequeña */
+@media screen and (max-width : 315px) {
+    header h1 {
+        font-size: 28px;
+    }
+    header {
+        height: 60px;
+    }
+    main {
+        height: calc(100vh - 60px);
+    }
+    header h1 {
+        padding-top: 15px;
+    }
+
+    .options h5 {
+        font-size: 15px;
+    }
+    .options button {
+        font-size: 8px;
+    }
+}
